@@ -1,0 +1,37 @@
+# Clock
+NET "top_clk" LOC="B8";
+# Define a new timing constraint indicating a 50 MHz clock period
+NET "top_clk" TNM_NET = "top_clk";
+TIMESPEC "TS_clk" = PERIOD "top_clk" 3 ns HIGH 50 %;
+
+# Attach switches
+NET "top_sw<0>" LOC=G18;
+NET "top_sw<1>" LOC=H18;
+NET "top_sw<2>" LOC=K18;
+NET "top_sw<3>" LOC=K17;
+NET "top_sw<4>" LOC=L14;
+NET "top_sw<5>" LOC=L13;
+NET "top_sw<6>" LOC=N17;
+NET "top_sw<7>" LOC=R17;
+
+#attach buttons
+NET "top_btn<0>" LOC=B18;
+NET "top_btn<1>" LOC=D18;
+NET "top_btn<2>" LOC=E18;
+NET "top_btn<3>" LOC=H13;
+
+#attach Sseg Display
+NET "top_seg<0>" LOC=L18;
+NET "top_seg<1>" LOC=F18;
+NET "top_seg<2>" LOC=D17;
+NET "top_seg<3>" LOC=D16;
+NET "top_seg<4>" LOC=G14;
+NET "top_seg<5>" LOC=J17;
+NET "top_seg<6>" LOC=H14;
+NET "top_dp" LOC=C17;
+
+#attach AN
+NET "top_an<0>" LOC=F17;
+NET "top_an<1>" LOC=H17;
+NET "top_an<2>" LOC=C18;
+NET "top_an<3>" LOC=F15;
